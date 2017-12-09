@@ -152,7 +152,7 @@ public final class RxGalleryActivity extends Activity {
             intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, request.isMultiSelectEnabled());
         }
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-            intent.putExtra(Intent.EXTRA_LOCAL_ONLY, true);
+            intent.putExtra(Intent.EXTRA_LOCAL_ONLY, false);
         }
         intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
         return new Pair<>(intent, RC_GALLERY);
